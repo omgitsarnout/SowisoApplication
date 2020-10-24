@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Sowiso Application</title>
+  <meta name="description" content="Sowiso Application by Arnout Van Nieuwenhove">
+  <meta name="author" content="Arnout Van Nieuwenhove">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <div class="container">
+  	<h1>Math test</h1>
+  	<span id="exercise"></span>
+
+  	<input id="answerTextbox" type="text" name="answer">
+  	<button onclick="checkAnswer()">Check answer</button>
+  </div>
+
+<script>
+	var number1 = Math.floor(Math.random()*101)
+	var number2 = Math.floor(Math.random()*101)
+	document.getElementById('exercise').innerHTML = number1 + " + " +  number2 + " = "
+
+	function checkAnswer() {
+		if (document.getElementById('answerTextbox').value == number1 + number2) {
+			alert("Correct");
+		} else {
+			alert("Incorrect");
+		}
+	}
+</script>
+
+</body>
+</html>
