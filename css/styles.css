@@ -12,4 +12,20 @@ body {
 	transform: translate(-50%, -50%);
 	font-family: 'Varela Round', sans-serif;
 	text-align: center;
+	border: 1px solid lightblue;
+	border-radius: 3px;
+	padding: 0 25px 25px 25px;
+}
+
+.container button {
+	background-color: white;
+	border-radius: 20px;
+	border: 2px lightblue solid;
+	font-family: 'Varela Round', sans-serif;
+	background-color: #b6ec4c;
+}
+
+.container button:hover {
+	border: 2px #b6ec4c solid;
+	cursor: pointer;
 }
